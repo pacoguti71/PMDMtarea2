@@ -60,5 +60,7 @@
     <string name="mensaje_toast">"Character %1$s has been selected "</string>
     <string name="version0">N/A</string>
     <string name="mensajeSnack">Welcome to the Mario\'s World</string>
+    <string name="navigation_drawer_open">"Open"</string>
+    <string name="navigation_drawer_close">"Close"</string>
 
 </resources>
