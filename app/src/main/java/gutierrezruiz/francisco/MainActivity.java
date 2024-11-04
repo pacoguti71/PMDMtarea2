@@ -12,6 +12,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -43,18 +44,9 @@ public class MainActivity extends AppCompatActivity {
         // Configura el layout de la actividad
         setContentView(R.layout.activity_main);
         // Configura el padding de la vista principal
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-        // Configura la barra de herramientas
-        ActionBar actionBar = getSupportActionBar();
-        // Configura el botón de retroceso
-        if (actionBar != null) {
-            // Habilita el botón de retroceso
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
+
+
+
 
         // Configura el binding de la actividad
         binding = ActivityMainBinding.inflate(getLayoutInflater());
