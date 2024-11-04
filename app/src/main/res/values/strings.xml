@@ -1,0 +1,72 @@
+<resources>
+    <!-- Aplicación -->
+    <string name="app_name" translatable="false">Super Mario Bros App</string>
+    <string name="app_author" translatable="false">Francisco Gutiérrez Ruiz</string>
+
+    <!-- Personaje -->
+    <string name="personaje_imagen">Imagen del personaje</string>
+    <string name="descripcion">Descripción</string>
+    <string name="habilidades">Habilidades</string>
+
+    <!-- Menú -->
+    <string name="acercade">Acerca de&#8230;</string>
+    <string name="menu">Menu</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="salir">Salir</string>
+    <string name="ajustes">Ajustes</string>
+
+    <!-- Nombres de personajes -->
+    <string name="boo">Boo</string>
+    <string name="bowser">Bowser</string>
+    <string name="bowser_jr">Bowser Jr</string>
+    <string name="daisy">Daisy</string>
+    <string name="diddy_kong">Diddy Kong</string>
+    <string name="donkey_kong">Donkey Kong</string>
+    <string name="luigi">Luigi</string>
+    <string name="mario">Mario</string>
+    <string name="peach">Peach</string>
+    <string name="rosalina">Rosalina</string>
+    <string name="toad">Toad</string>
+    <string name="waluigi">Waluigi</string>
+    <string name="wario">Wario</string>
+    <string name="yoshi">Yoshi</string>
+
+    <!-- Descripción de personajes -->
+    <string name="boo_descripcion">Boo es un fantasma tímido que forma parte de la corte de Bowser. Es conocido por ser travieso y moverse solo cuando no lo miran.</string>
+    <string name="bowser_descripcion">Bowser es el rey de los Koopas y el archienemigo de Mario. Su gran tamaño y su fuerza lo hacen un rival formidable.</string>
+    <string name="bowserjr_descripcion">Bowser Jr. es el hijo de Bowser, que sigue los pasos de su padre en su lucha contra Mario. Es travieso y tiene mucha energía.</string>
+    <string name="daisy_descripcion">Daisy es la princesa de Sarasaland y amiga de Peach. Es extrovertida, enérgica y aventurera.</string>
+    <string name="diddykong_descripcion">Diddy es el compañero fiel de Donkey Kong. Es ágil, rápido y siempre está listo para la acción.</string>
+    <string name="donkeykong_descripcion">Donkey Kong es un gorila fuerte y protector de la isla Kong. Aunque tiene un lado rudo, es muy leal a sus amigos.</string>
+    <string name="luigi_descripcion">Luigi es el hermano de Mario y un poco más tímido que él, pero siempre está dispuesto a ayudar en la aventura.</string>
+    <string name="mario_descripcion">Mario es el héroe principal del Reino Champiñón, siempre listo para rescatar a la princesa Peach de las garras de Bowser.</string>
+    <string name="peach_descripcion">Peach es la princesa del Reino Champiñón. Aunque es a menudo capturada por Bowser, también sabe defenderse cuando es necesario.</string>
+    <string name="rosalina_descripcion">Rosalina es la guardiana del cosmos y madre adoptiva de los Lumas. Es sabia, tranquila y poderosa.</string>
+    <string name="toad_descripcion">Toad es un habitante del Reino Champiñón, leal a la princesa Peach. Aunque pequeño, es rápido y trabajador.</string>
+    <string name="waluigi_descripcion">Waluigi es el rival de Luigi y es conocido por su carácter mezquino y sus habilidades en deportes.</string>
+    <string name="wario_descripcion">Wario es el rival de Mario, codicioso y fuerte. Aunque es avaro, también es astuto y siempre busca su propio beneficio.</string>
+    <string name="yoshi_descripcion">Yoshi es un dinosaurio amigable y fiel compañero de Mario. Puede comer enemigos con su larga lengua.</string>
+
+    <!-- Habilidades de personajes -->
+    <string name="boo_habilidad">Invisibilidad – Boo puede volverse invisible y atravesar paredes cuando nadie lo está mirando.</string>
+    <string name="bowser_habilidad">Llamarada – Bowser puede escupir fuego desde su boca, quemando todo a su paso.</string>
+    <string name="bowserjr_habilidad">Cañón Koopa – Bowser Jr. usa su vehículo equipado con cañones para disparar proyectiles.</string>
+    <string name="daisy_habilidad">Golpe de flor – Daisy puede invocar una ráfaga de flores para atacar a sus enemigos o mejorar sus habilidades.</string>
+    <string name="diddykong_habilidad">Jet Pack – Diddy puede volar usando su mochila propulsora para llegar a lugares altos o esquivar ataques.</string>
+    <string name="donkeykong_habilidad">Puñetazo potente – Donkey Kong puede dar un poderoso golpe que derriba a sus enemigos.</string>
+    <string name="luigi_habilidad">Super Salto – Luigi puede saltar más alto que Mario, lo que le permite alcanzar plataformas más elevadas.</string>
+    <string name="mario_habilidad">Salto en pared – Mario puede saltar entre paredes para alcanzar lugares difíciles o esquivar ataques.</string>
+    <string name="peach_habilidad">Flotación – Peach puede flotar en el aire durante un corto período de tiempo, lo que le da ventaja en saltos largos.</string>
+    <string name="rosalina_habilidad">Magia estelar – Rosalina puede controlar las estrellas para lanzar poderosos ataques de energía cósmica.</string>
+    <string name="toad_habilidad">Velocidad Champiñón – Toad puede correr a gran velocidad, superando a sus enemigos en carreras cortas.</string>
+    <string name="waluigi_habilidad">Trampa de enredadera – Waluigi puede plantar enredaderas que ralentizan a sus oponentes y los atrapan.</string>
+    <string name="wario_habilidad">Impacto aplastante – Wario puede cargar un ataque para aplastar a sus enemigos con su cuerpo.</string>
+    <string name="yoshi_habilidad">Salto con patada – Yoshi puede dar un salto seguido de una patada para eliminar enemigos y destruir bloques.</string>
+
+    <!-- Mensajes -->
+    <string name="mensaje_acerca_de">Aplicación desarrollada por %1$s. Versión %2$s</string>
+    <string name="mensaje_toast">Se ha seleccionado el personaje %1$s</string>
+    <string name="version0">N/D</string>
+    <string name="mensajeSnack">"Bienvenidos al mundo de Mario"</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales del tema -->
+    <color name="colorPrimary">#EE004B</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Colores de fondo -->
+    <color name="colorBackground">#FFFFFF</color>
+
+    <!-- Colores de texto -->
+    <color name="colorTextPrimary">#212121</color> <!-- Texto oscuro principal -->
+    <color name="colorTextSecondary">#203FE7</color> <!-- Texto oscuro secundario -->
+    <!-- Color del hint o sugerencia de texto -->
+
+    <!-- Colores de botones y estados -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- Color del texto sobre botones o fondos primarios -->
+
+    <!-- Colores de bordes y sombras -->
+
+    <!-- Colores de error y advertencia -->
+
+    <!-- Colores personalizados (por ejemplo, para categorías o indicadores) -->
+    <!-- Verde éxito -->
+    <color name="colorInfo">#2196F3</color>   <!-- Azul información -->
+    <!-- Fondo para advertencias -->
+</resources>

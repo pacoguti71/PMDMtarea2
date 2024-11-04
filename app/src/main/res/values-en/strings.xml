@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="personaje_imagen">Character Image</string>
+    <string name="descripcion">Description</string>
+    <string name="habilidades">Skills</string>
+
+    <string name="acercade">About&#8230;</string>
+
+    <string name="menu">Menu</string>
+    <string name="aceptar">Accept</string>
+    <string name="ajustes">Settings</string>
+    <string name="salir">Exit</string>
+    <string name="mensaje_acerca_de">Application developed by %1$s. Version %2$s</string>
+
+    <string name="boo">Boo</string>
+    <string name="bowser">Bowser</string>
+    <string name="bowser_jr">Bowser Jr.</string>
+    <string name="daisy">Daisy</string>
+    <string name="diddy_kong">Diddy Kong</string>
+    <string name="donkey_kong">Donkey Kong</string>
+    <string name="luigi">Luigi</string>
+    <string name="mario">Mario</string>
+    <string name="peach">Peach</string>
+    <string name="rosalina">Rosalina</string>
+    <string name="toad">Toad</string>
+    <string name="waluigi">Waluigi</string>
+    <string name="wario">Wario</string>
+    <string name="yoshi">Yoshi</string>
+
+    <string name="boo_descripcion">Boo is a shy ghost who is part of Bowser\'s court. He is known for being mischievous and only moves when no one is looking at him.</string>
+    <string name="bowser_descripcion">Bowser is the king of the Koopas and Mario\'s arch-enemy. His great size and strength make him a formidable rival.</string>
+    <string name="bowserjr_descripcion">Bowser Jr. is Bowser\'s son, following in his father\'s footsteps in the fight against Mario. He is mischievous and full of energy.</string>
+    <string name="daisy_descripcion">Daisy is the princess of Sarasaland and a friend of Peach. She is outgoing, energetic, and adventurous.</string>
+    <string name="diddykong_descripcion">Diddy is Donkey Kong\'s loyal companion. He is agile, fast, and always ready for action.</string>
+    <string name="donkeykong_descripcion">Donkey Kong is a strong gorilla and protector of Kong Island. Although he has a rough side, he is very loyal to his friends.</string>
+    <string name="luigi_descripcion">Luigi is Mario\'s brother and a bit shyer than him, but always ready to help on the adventure.</string>
+    <string name="mario_descripcion">Mario is the main hero of the Mushroom Kingdom, always ready to rescue Princess Peach from Bowser\'s clutches.</string>
+    <string name="peach_descripcion">Peach is the princess of the Mushroom Kingdom. Although often captured by Bowser, she knows how to defend herself when necessary.</string>
+    <string name="rosalina_descripcion">Rosalina is the guardian of the cosmos and adoptive mother of the Lumas. She is wise, calm, and powerful.</string>
+    <string name="toad_descripcion">Toad is a resident of the Mushroom Kingdom, loyal to Princess Peach. Although small, he is fast and hardworking.</string>
+    <string name="waluigi_descripcion">Waluigi is Luigi\'s rival and is known for his sneaky nature and sports skills.</string>
+    <string name="wario_descripcion">Wario is Mario\'s rival, greedy and strong. Although greedy, he is also cunning and always looking out for his own benefit.</string>
+    <string name="yoshi_descripcion">Yoshi is a friendly dinosaur and Mario\'s loyal companion. He can eat enemies with his long tongue.</string>
+
+    <string name="boo_habilidad">Invisibility – Boo can turn invisible and pass through walls when no one is looking at him.</string>
+    <string name="bowser_habilidad">Flame Breath – Bowser can breathe fire from his mouth, burning everything in his path.</string>
+    <string name="bowserjr_habilidad">Koopa Cannon – Bowser Jr. uses his vehicle equipped with cannons to fire projectiles.</string>
+    <string name="daisy_habilidad">Flower Strike – Daisy can summon a burst of flowers to attack enemies or enhance her abilities.</string>
+    <string name="diddykong_habilidad">Jet Pack – Diddy can fly using his jetpack to reach high places or dodge attacks.</string>
+    <string name="donkeykong_habilidad">Power Punch – Donkey Kong can deliver a powerful punch that knocks down enemies.</string>
+    <string name="luigi_habilidad">Super Jump – Luigi can jump higher than Mario, allowing him to reach higher platforms.</string>
+    <string name="mario_habilidad">Wall Jump – Mario can jump between walls to reach difficult places or dodge attacks.</string>
+    <string name="peach_habilidad">Float – Peach can float in the air for a short period, giving her an advantage in long jumps.</string>
+    <string name="rosalina_habilidad">Star Magic – Rosalina can control the stars to launch powerful cosmic energy attacks.</string>
+    <string name="toad_habilidad">Mushroom Speed – Toad can run at high speed, outrunning his enemies in short races.</string>
+    <string name="waluigi_habilidad">Vine Trap – Waluigi can plant vines that slow down and trap his opponents.</string>
+    <string name="wario_habilidad">Crushing Impact – Wario can charge an attack to crush enemies with his body.</string>
+    <string name="yoshi_habilidad">Kick Jump – Yoshi can jump followed by a kick to eliminate enemies and destroy blocks.</string>
+    <string name="mensaje_toast">"Character %1$s has been selected "</string>
+    <string name="version0">N/A</string>
+    <string name="mensajeSnack">Welcome to the Mario\'s World</string>
+
+</resources>

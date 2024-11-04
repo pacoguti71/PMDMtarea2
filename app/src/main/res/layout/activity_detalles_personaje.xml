@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        style="@style/nombrePersonaje"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/imagenDetalle"
+        />
+
+    <TextView
+        android:id="@+id/textViewTituloDescripcion"
+        style="@style/titulo"
+        android:text="@string/descripcion" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        style="@style/detallesPersonaje"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewTituloHabilidades"
+        style="@style/titulo"
+        android:text="@string/habilidades" />
+
+    <TextView
+        android:id="@+id/textViewHabilidades"
+        style="@style/detallesPersonaje"
+        android:text="" />
+
+</LinearLayout>

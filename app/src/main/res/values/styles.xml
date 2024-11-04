@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema global de la aplicación. Hereda de un tema que no tiene ActionBar y se aplica como tema para que todas las actividades carezcan de ella -->
+    <style name="Tema" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Color del tema -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Colores del texto -->
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <!-- Fuente global del tema -->
+        <item name="android:fontFamily">@font/supermario</item>
+    </style>
+
+    <!-- Estilo para el nombre del personaje -->
+    <style name="nombrePersonaje">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/supermario</item>
+    </style>
+
+    <!-- Estilo para los títulos de los detalles del personaje -->
+    <style name="titulo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/supermario</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Estilo para los detalles del personaje -->
+    <style name="detallesPersonaje">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/maquinaescribir</item>
+    </style>
+
+    <style name="imagenDetalle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="imagenCardView">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="nombreCardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+
+    <!-- Estilo para una Pantalla splash de bienvenida -->
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/pantalla_bienvenida</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Estilo para un tema personalizado de la aplicación -->
+    <style name="AppTheme">AppTheme
+    </style>
+
+</resources>
+
+
