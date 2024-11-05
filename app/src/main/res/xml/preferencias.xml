@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Idioma"
+        android:summary="Desactivar para idioma en inglés"
+        android:title="Idioma">
+    </SwitchPreference>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Modo"
+        android:summary="Desactivar para modo oscuro"
+        android:title="Modo">
+    </SwitchPreference>
+
+</androidx.preference.PreferenceScreen>

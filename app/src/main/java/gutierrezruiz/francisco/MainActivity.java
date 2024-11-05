@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Estás en Home", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.nav_settings) {
                     // Ir a la actividad de Ajustes
-                    Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                    Intent intent = new Intent(MainActivity.this, PreferenciasActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.nav_language) {
                     // Mostrar un diálogo para cambiar el idioma
