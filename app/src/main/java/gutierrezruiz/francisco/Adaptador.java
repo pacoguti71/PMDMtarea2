@@ -13,12 +13,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/**
+ * Adaptador.
+ */
 public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> implements View.OnClickListener {
 
+    /**
+     * Lista de personajes.
+     */
     ArrayList<Personaje> listaPersonajes; // Lista de personajes
     private View.OnClickListener listener; // Escuchador de clics
 
-    // Constructor para la clase Adaptador
+    /**
+     * Constructor que instancia un nuevo Adaptador.
+     *
+     * @param listaPersonajes la lista de personajes
+     */
     public Adaptador(ArrayList<Personaje> listaPersonajes) {
         // Inicializa la lista de personajes
         this.listaPersonajes = listaPersonajes;
@@ -50,7 +60,11 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> implem
         return listaPersonajes.size();
     }
 
-    // Establece el escuchador de clics
+    /**
+     * Establece el escuchador de clics
+     *
+     * @param listener el escuchador de clics
+     */
     public void setOnClickListener(View.OnClickListener listener) {
         this.listener = listener;
     }
@@ -60,19 +74,29 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> implem
     public void onClick(View view) {
         if (listener != null) {
             listener.onClick(view);
-
+        }
     }
-    }
 
-
-    // Crea un nuevo ViewHolder
+    /**
+     * View holder.
+     */
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        // Atributos de la clase ViewHolder
+        /**
+         * Textview nombre.
+         */
+// Atributos de la clase ViewHolder
         TextView textViewNombre;
+        /**
+         * Imageview imagen.
+         */
         ImageView imageView;
 
-        // Constructor para la clase ViewHolder
+        /**
+         * Constructor que instancia un nuevo View holder.
+         *
+         * @param itemView the item view
+         */
         public ViewHolder(@NonNull View itemView) {
             // Llama al constructor de la clase padre
             super(itemView);
@@ -82,4 +106,4 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> implem
         }
     }
 
-}
+} // Fin class

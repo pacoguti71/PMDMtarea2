@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+/**
+ * Activity de la Presentacion.
+ */
 public class PresentacionActivity extends AppCompatActivity {
 
     @Override

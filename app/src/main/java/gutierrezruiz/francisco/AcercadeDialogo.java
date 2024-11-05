@@ -11,22 +11,21 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
 /**
+ * Acercade dialogo.
+ *
  * @author Francisco Gutiérrez Ruiz
  * @version 1.0
- * @since 2024/10/16
- * <p>
- * Muestra un diálogo de alerta mostrando información sobre la aplicación.
+ * @since 2024 /10/16 <p> Muestra un diálogo de alerta mostrando información sobre la aplicación.
  */
 public class AcercadeDialogo extends DialogFragment {
 
 
     /**
-     * Diálogo On create dialog
+     * Crea el diálogo de alerta.
      *
      * @param savedInstanceState el estado de la instancia guardada
      * @return el diálogo
      */
-    // Creamos el dialogo de alerta
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -48,15 +47,14 @@ public class AcercadeDialogo extends DialogFragment {
         String opcionAceptar = getActivity().getString(R.string.aceptar);
         String mensaje = getString(R.string.mensaje_acerca_de, autor, versionName);
 
-
         // Estabecemos el título y el mensaje del diálogo
         builder.setTitle(titulo).setMessage(mensaje).setPositiveButton(opcionAceptar, new DialogInterface.OnClickListener() {
-                    // Cuando pulsamos el botón cerramos el diálogo
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
+            // Cuando pulsamos el botón cerramos el diálogo
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
         // Devolvemos el diálogo creado
         return builder.create();
     }
-}
+} // Fin class

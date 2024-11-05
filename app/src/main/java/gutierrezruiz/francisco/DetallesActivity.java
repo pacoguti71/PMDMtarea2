@@ -18,6 +18,9 @@ import com.google.android.material.navigation.NavigationView;
 
 import gutierrezruiz.francisco.databinding.ActivityDetallesPersonajeBinding;
 
+/**
+ * Activity Detalles del personaje.
+ */
 public class DetallesActivity extends AppCompatActivity {
     @Override
     // Este método se ejecuta cuando se crea la actividad
@@ -52,9 +55,7 @@ public class DetallesActivity extends AppCompatActivity {
         binding.imageView.setImageResource(imagenId);
         binding.textViewDescripcion.setText(descripcion);
         binding.textViewHabilidades.setText(habilidad);
-
-
-    }
+    } // Fin onCreate
 
     // Maneja el evento de clic del botón de retroceso
     @Override

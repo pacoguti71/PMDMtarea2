@@ -1,15 +1,13 @@
 package gutierrezruiz.francisco;
 
-import android.os.Parcelable;
-
 /**
  * @author Francisco Gutiérrez Ruiz
  * @version 1.0
  * @since 2024/10/16
- *
+ * <p>
  * Personaje.
  */
-public class Personaje{
+public class Personaje {
     private final String nombre; // Nombre del personaje
     private final int imagenId; // Imagen del personaje. Es un entero
     private final String descripcion; // La descripción del personaje
@@ -67,4 +65,4 @@ public class Personaje{
     public String getHabilidad() {
         return habilidad;
     }
-}
+} // Fin class

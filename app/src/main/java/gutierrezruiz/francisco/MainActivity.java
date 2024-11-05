@@ -37,6 +37,9 @@ import java.util.Locale;
 
 import gutierrezruiz.francisco.databinding.ActivityMainBinding;
 
+/**
+ * Actividad principal.
+ */
 public class MainActivity extends AppCompatActivity {
     private final ArrayList<Personaje> misPersonajes = new ArrayList<>(); // Lista de personajes
     private ActivityMainBinding binding; // Declaración de la variable de enlace
@@ -57,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         // Configura el layout de la actividad
         setContentView(R.layout.activity_main);
         // Configura el padding de la vista principal
-
 
         // Configura el binding de la actividad
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -93,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         // Configurar el NavigationView
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
             @Override
             // Este método se ejecuta cuando se selecciona un elemento del menú
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -156,14 +159,14 @@ public class MainActivity extends AppCompatActivity {
         if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
-        // Manejamos las opciones elegidas
+        // Maneja las opciones elegidas
         if (item.getItemId() == R.id.menu_icon) {
-            // Mostrar el submenú al pulsar el ícono
+            // Muestra el submenú al pulsar el ícono
             showPopupMenu(findViewById(R.id.menu_icon));
             // Devuelve true para indicar que el evento ha sido manejado
             return true;
         } else if (item.getItemId() == android.R.id.home) {
-            // Volver a la actividad anterior
+            // Vuelve a la actividad anterior
             finish();
             // Devuelve true para indicar que el evento ha sido manejado
             return true;
@@ -174,23 +177,23 @@ public class MainActivity extends AppCompatActivity {
 
     // Muestra el submenú
     private void showPopupMenu(View view) {
-        // Cargamos el menú del submenú
+        // Carga el menú del submenú
         PopupMenu popup = new PopupMenu(this, view);
-        // Inflamos el menú del submenú
+        // Infla el menú del submenú
         popup.getMenuInflater().inflate(R.menu.submenu, popup.getMenu());
-        // Manejamos las selecciones del submenú
+        // Maneja las selecciones del submenú
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             // Este método se ejecuta cuando se selecciona un elemento del submenú
             public boolean onMenuItemClick(MenuItem menuItem) {
                 int itemId = menuItem.getItemId();
-                // Manejamos las opciones elegidas
+                // Maneja las opciones elegidas
                 if (itemId == R.id.acercade) {
                     // Acción para la opción acerca de
                     FragmentManager fragmentManager = getSupportFragmentManager();
-                    // Creamos un objeto de nuestra clase AcercadeDialogo que muestra el diálogo
+                    // Crea un objeto de nuestra clase AcercadeDialogo que muestra el diálogo
                     AcercadeDialogo dialogo = new AcercadeDialogo();
-                    // Mostramos el diálogo
+                    // Muestra el diálogo
                     dialogo.show(fragmentManager, "dialogoAcercade");
                     // Devuelve true para indicar que el evento ha sido manejado
                     return true;
@@ -204,56 +207,55 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-        // Mostramos el PopupMenu
+        // Muestra el PopupMenu
         popup.show();
     }
 
     // Muestra el diálogo para cambiar el idioma
     private void showLanguageDialog() {
-        // Crear el diálogo
+        // Crea el diálogo
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         // Título del diálogo
         builder.setTitle("Cambiar idioma");
-        // Configurar el Switch
+        // Configura el Switch
         View dialogView = getLayoutInflater().inflate(R.layout.dialog_languaje_switch, null);
-        // Agregar el Switch al diálogo
+        // Agrega el Switch al diálogo
         builder.setView(dialogView);
         // Referencia al Switch
-        Switch languageSwitch = dialogView.findViewById(R.id.languageSwitch);
-        // Cargar el idioma seleccionado
-        SharedPreferences prefs = getSharedPreferences("Settings", MODE_PRIVATE);
-        // Cargar el estado del Switch
-        boolean isEnglish = prefs.getBoolean("isEnglish", true);
-        // Establecer el estado del Switch
-        languageSwitch.setChecked(isEnglish);
-        // Manejar el cambio de idioma
-        languageSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            // Guardar el estado del Switch
-            SharedPreferences.Editor editor = prefs.edit();
-            // Guardar el estado del Switch
+        Switch conmutadorIdioma = dialogView.findViewById(R.id.languageSwitch);
+        // Carga el idioma seleccionado
+        SharedPreferences preferencias = getSharedPreferences("Ajustes", MODE_PRIVATE);
+        // Carga el estado del Switch
+        boolean isEnglish = preferencias.getBoolean("isEnglish", true);
+        // Establece el estado del Switch
+        conmutadorIdioma.setChecked(isEnglish);
+        // Maneja el cambio de idioma
+        conmutadorIdioma.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            // Guarda el estado del Switch
+            SharedPreferences.Editor editor = preferencias.edit();
+            // Guarda el estado del Switch
             editor.putBoolean("isEnglish", isChecked);
-            // Guardar los cambios
+            // Guarda los cambios
             editor.apply();
-            // Cambiar el idioma según el estado del Switch
+            // Cambia el idioma según el estado del Switch
             setLanguage(isChecked ? "en" : "es");
         });
         // Botón de aceptar
         builder.setPositiveButton("Cerrar", (dialog, which) -> dialog.dismiss());
-        // Mostrar el diálogo
+        // Muestra el diálogo
         builder.create().show();
     }
 
-    // Cambiar el idioma
-    private void setLanguage(String langCode) {
-        // Cambiar el idioma
-        Locale locale = new Locale(langCode);
+    // Cambia el idioma
+    private void setLanguage(String idioma) {
+        Locale locale = new Locale(idioma);
         Locale.setDefault(locale);
-        // Actualizar la configuración
-        Configuration config = getResources().getConfiguration();
-        // Actualizar la configuración
-        config.setLocale(locale);
-        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
-        // Reiniciar actividad para aplicar cambios
+        // Actualiza la configuración
+        Configuration configuracion = getResources().getConfiguration();
+        // Actualiza la configuración
+        configuracion.setLocale(locale);
+        getResources().updateConfiguration(configuracion, getResources().getDisplayMetrics());
+        // Reinicia la actividad para aplicar cambios
         recreate();
     }
 
